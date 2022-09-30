@@ -5,10 +5,25 @@
     padding: 0;
 }
 
+body {
+    background-image: url("pierre-fond.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+   
 
 /*barre de naviguation*/
 
 .logo {
     width: 30 px;
     height: 100%;
+}
+
+main {
+    background-image: url("pierre-fond.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
 }
