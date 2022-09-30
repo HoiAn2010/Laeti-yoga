@@ -1,0 +1,14 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*barre de naviguation*/
+
+.logo {
+    width: 30 px;
+    height: 100%;
+}
