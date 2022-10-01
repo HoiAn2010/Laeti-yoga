@@ -5,11 +5,13 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #394759;
+    --secondary-color: #f2f2f2;
+}
 body {
-    background-image: url("pierre-fond.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
+    background-image: url("stones-in.jpg");
+    background-size: cover;
 }
    
 
@@ -20,10 +22,27 @@ body {
     height: 100%;
 }
 
-main {
-    background-image: url("pierre-fond.jpg");
-    background-repeat: no-repeat;
+.navigation {
     width: 100%;
-    height: 100%;
+    height: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    color: var(--secondary-color);
+    
 }
+
+ul li {
+    margin: auto;
+    color: var(--secondary-color) ;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 30px;
+    text-align: center;
+    margin-top: auto;
+
+
 }
