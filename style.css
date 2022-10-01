@@ -14,23 +14,29 @@
 
 /*menu de navigation*/
 
+nav {
+    display: flex;
+    justify-items: center;
+    background-color: var(--primary-color);
+}
+
 .logo {
     width: 50px;
     height: 100%;
+    margin: auto;
     margin-left: 20px;
 }
 
 .navigation {
     width: 100%;
     height: 60px;
-    background-color: var(--primary-color);
     display: flex;
     justify-content: space-around;
     list-style: none;
-    color:red;
+    
 }
 
- .nav li  {
+.navigation li  {
     margin: auto;
     color: #f2f2f2;
    
@@ -39,7 +45,7 @@
 
 /*1ere section titre*/
 
-.top-main {
+.top-content {
     height: 150vh;
     background-image: url("bannière.jpg");
     background-size: 100%;
@@ -52,15 +58,17 @@ h1 {
     text-align: left;
     padding-top: 90px;
     padding-left: 10px;
+    margin: auto;
 }
 
 /*section texte*/
 
 .main-content {
-    height: 600vh;
-    background-image: url("stones-in.jpg");
+    height: 150vh;
+    background-image: url("pierre-noire-flou.png");
     background-size: 100%;
     background-repeat: no-repeat;
+    margin-top: 0;
 }
 
 
