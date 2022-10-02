@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body{
+    background-color: #c9d7de;
+}
+
 :root {
     --primary-color: #567370;
     --secondary-color: #f2f2f2;
@@ -18,6 +22,7 @@ nav {
     display: flex;
     justify-items: center;
     background-color: var(--primary-color);
+    margin-top: 20px;
 }
 
 .logo {
@@ -33,54 +38,83 @@ nav {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    
+    margin-left: 100px;
 }
 
 .navigation li  {
     margin: auto;
     color: #f2f2f2;
-   
 }
 
 
 /*1ere section titre*/
 
 .top-content {
-    height: 150vh;
+    height: 120vh;
     background-image: url("bannière.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 h1 {
-    color: var(--primary-color);
+    color: var(--text-color);
     font-size: 60px;
     text-align: left;
-    padding-top: 90px;
+    padding-top: 20px;
     padding-left: 10px;
     margin: auto;
 }
 
 /*section texte*/
 
-.main-content {
-    height: 150vh;
-    background-image: url("pierre-noire-flou.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 0;
+/*part about me*/
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px;
+    height: auto;
 }
 
+.img-laeti {
+    width: 50%;
+    height: auto;
+    padding-right: 30px;
+}
 
+.about-me h2, p {
+    margin: 10px 0px 10px 10px;
+    }
+
+/* part yoga classes*/
+
+.yoga-class {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px;
+    height: auto;
+}
+
+.yoga-class h2, p{
+    margin: 10px 10px 10px 0px;
+    }
+
+.img-courses{
+    width: 50%;
+    height: auto;
+    padding-left: 30px;
+}
+
+/* part prices and schedule */
 
 
 
 /*pied de page*/
 
 footer {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    height: 40px;
+    background-color: #567370;
+    color: #f2f2f2;
     text-align: center;
-    padding-top: 10px;
+    margin-top: 10px;
+    padding: 10px;
 }
