@@ -5,14 +5,22 @@
     padding: 0;
 }
 
-body{
-    background-color: #c9d7de;
+:root {
+    --color-1: #567370;
+    --color-2: #f2f2f2;
+    --color-3: #bfd1d1;
+    --text-color: #394759;
 }
 
-:root {
-    --primary-color: #567370;
-    --secondary-color: #f2f2f2;
-    --text-color: #394759;
+body{
+    background-color: var(--color-2);
+}
+
+h2, h3, p {
+    color: var(--text-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
 
 
@@ -21,7 +29,7 @@ body{
 nav {
     display: flex;
     justify-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--color-1);
     margin-top: 20px;
 }
 
@@ -43,7 +51,7 @@ nav {
 
 .navigation li  {
     margin: auto;
-    color: #f2f2f2;
+    color: var(--color-2);
 }
 
 
@@ -57,7 +65,7 @@ nav {
 }
 
 h1 {
-    color: var(--text-color);
+    color: #394759;
     font-size: 60px;
     text-align: left;
     padding-top: 20px;
@@ -67,12 +75,13 @@ h1 {
 
 /*section texte*/
 
-/*part about me*/
+    /*part about me*/
 
-.about-me {
+#about-me {
     display: flex;
     justify-content: space-between;
     margin: 50px 50px;
+    padding: 20px 0px;
     height: auto;
 }
 
@@ -82,22 +91,23 @@ h1 {
     padding-right: 30px;
 }
 
-.about-me h2, p {
-    margin: 10px 0px 10px 10px;
+.presentation {
+    padding-left: 30px;
     }
 
-/* part yoga classes*/
+    /* part yoga classes*/
 
-.yoga-class {
+#yoga-class {
     display: flex;
     justify-content: space-between;
     margin: 50px 50px;
+    padding: 20px 0px;
     height: auto;
 }
 
-.yoga-class h2, p{
-    margin: 10px 10px 10px 0px;
-    }
+.courses {
+    padding-right: 30px;
+}
 
 .img-courses{
     width: 50%;
@@ -105,10 +115,26 @@ h1 {
     padding-left: 30px;
 }
 
-/* part prices and schedule */
+    /* part prices and schedule */
+
+#prices-schedules {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px;
+    padding: 20px 0px;
+    height: auto;
+}
 
 
-
+/* 2eme section informations */
+.low-content {
+    background-color: var(--color-3);
+    padding: 20px;
+}
+ 
+.low-content h2 {
+    text-align: center;
+}
 /*pied de page*/
 
 footer {
