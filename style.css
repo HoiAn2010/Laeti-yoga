@@ -140,7 +140,7 @@ h1 {
     width: 100%;
     height: 300px;
     margin: 10px;
-    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+  
 }
 
 .name {
@@ -154,10 +154,6 @@ h1 {
     justify-content: space-around;
     margin: 10px;
 }
-
-/*.person { 
-    
-}*/
 
 
     /* section schedules */
@@ -175,10 +171,24 @@ h1 {
 .low-content {
     background-color: var(--color-4);
     padding: 20px;
+    display: flex;
+    justify-content: space-around;
 }
  
 .low-content h2 {
     text-align: center;
+}
+
+.adress{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+
 }
 /*pied de page*/
 
