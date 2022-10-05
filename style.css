@@ -131,7 +131,9 @@ h1 {
 .prices {
     background-color: red;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    width: 75%;
 }
 
 .individual {
@@ -149,7 +151,8 @@ background-color: rgb(129, 233, 129);
     /* section schedules */
 
 .schedules {
-    background-color: blue; 
+    background-color: blue;
+    width: 25%;
 }
 
 
