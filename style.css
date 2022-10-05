@@ -8,7 +8,8 @@
 :root {
     --color-1: #567370;
     --color-2: #f2f2f2;
-    --color-3: #bfd1d1;
+    --color-3: #c6dbdb;
+    --color-4: #9fb6bf;
     --text-color: #394759;
 }
 
@@ -20,7 +21,6 @@ h2, h3, p {
     color: var(--text-color);
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
 
@@ -123,42 +123,57 @@ h1 {
     margin: 50px 50px;
     padding: 20px 0px;
     height: auto;
-    background-color: pink;
+    /*background-color: pink;*/
 }
 
     /* section prices */
 
-.prices {
-    background-color: red;
+.all-prices {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    width: 75%;
+    padding-left: 10px;
+    width: 45rem;
 }
 
-.individual {
-    background-color: yellow;
+.card {
+    background-color: var(--color-3);
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
 }
 
-.collective {
-    background-color: violet;
+.name {
+    text-align: center;
+    background-color: var(--color-4);
+    padding: 10px;
 }
 
-.subscrib{
-background-color: rgb(129, 233, 129);
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
 }
+
+/*.person { 
+    
+}*/
+
 
     /* section schedules */
 
-.schedules {
-    background-color: blue;
-    width: 25%;
+.all-schedules {
+    /*background-color: blue;*/
+    width: 20em;
+    height: 300px;
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 
 /* 2eme section informations */
 .low-content {
-    background-color: var(--color-3);
+    background-color: var(--color-4);
     padding: 20px;
 }
  
