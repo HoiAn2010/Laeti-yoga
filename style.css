@@ -55,7 +55,7 @@ nav {
 }
 
 
-/*1ere section titre*/
+/*1er bloc titre*/
 
 .top-content {
     height: 120vh;
@@ -73,7 +73,7 @@ h1 {
     margin: auto;
 }
 
-/*section texte*/
+/*bloc textuel*/
 
     /*part about me*/
 
@@ -123,6 +123,33 @@ h1 {
     margin: 50px 50px;
     padding: 20px 0px;
     height: auto;
+    background-color: pink;
+}
+
+    /* section prices */
+
+.prices {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+}
+
+.individual {
+    background-color: yellow;
+}
+
+.collective {
+    background-color: violet;
+}
+
+.subscrib{
+background-color: rgb(129, 233, 129);
+}
+
+    /* section schedules */
+
+.schedules {
+    background-color: blue; 
 }
 
 
