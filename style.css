@@ -82,7 +82,7 @@ nav {
 /*1er bloc titre*/
 
 .top-content {
-    height: 120vh;
+    height: 100vh;
     background-image: url("bannière.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -111,7 +111,8 @@ h1 {
 
 .img-laeti {
     width: 100%;
-    height: auto;
+    max-width:50%;
+    height: fit-content;
     padding-right: 30px;
 }
 
@@ -134,10 +135,13 @@ h1 {
 }
 
 .img-courses{
-    width: 50%;
-    height: auto;
+    width: 100%;
+    max-width: 50%;
+    height: fit-content;
     padding-left: 30px;
 }
+
+
 
     /* part prices and schedule */
 
@@ -257,6 +261,16 @@ textarea {
     padding-left: 100px;
 }
     
+/*------ ME SUIVRE -----*/
+.social{
+    list-style: none;
+    text-align: center;
+    margin: 30px 10px;
+}
+
+.icone {
+    margin: 10px;
+}
 
 
 /*pied de page*/
