@@ -14,7 +14,7 @@
     --text-color: #394759;
 }
 /*bonne pratique de taille px=>rem qui est relatif au parent
-h1: 2.5rem
+h1: 2.5remà l'élément racine root
 h2: 2.25rem
 h3: 2rem
 h4: 1.75rem
@@ -223,16 +223,16 @@ h1 {
 .contact {
     display: flex;
     flex-direction: column;
-   margin: 0px 20px;
+    margin: 0px 20px;
 }
 
 button {
     width: 100px;
     margin: 20px 0px 20px 80px;
     color: var(--color-2);
-    background-color: var(--color-1);
+    background-color: black;
     padding: 10px;
-    border-color: #567370;
+    font-family: 'Baloo 2', cursive;
     box-shadow: 0px 10px 13px -7px #000000, -4px 0px 25px 2px rgba(86,115,112,0);
 }
 
@@ -246,6 +246,8 @@ input {
     height: 20px;
     box-shadow: 0px 10px 13px -7px #000000;
     border-color: var(--color-3);
+    font-family: cursive;
+    color:#567370;
 }
 
 textarea {
@@ -253,6 +255,8 @@ textarea {
     height: 80px;
     box-shadow: 0px 10px 13px -7px #000000;
     border-color:var(--color-3);
+    font-family: cursive;
+    color:#567370;
 }
 
 
@@ -300,3 +304,13 @@ footer {
         font-size: 3 rem;
     }
 
+
+    low-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .social {
+    flex-direction: row;
+    justify-content: center;
+    }
