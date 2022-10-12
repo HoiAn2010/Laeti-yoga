@@ -47,9 +47,8 @@ nav {
 }
 
 .logo {
-    width: 50px;
-    height: 100%;
-    margin: auto;
+    width: 60px;
+    height: 60px; 
     margin-left: 20px;
 }
 
@@ -90,7 +89,7 @@ nav {
 
 h1 {
     color: #394759;
-    font-size: 56px;
+    font-size: 3.5rem;
     text-align: left;
     padding-top: 20px;
     padding-left: 10px;
@@ -282,3 +281,22 @@ footer {
     margin-top: 10px;
     padding: 10px;
 }
+
+
+
+/* responsive*/
+
+/*barre navigation => menu burger*/
+
+/* @media screen and (max-width: 480px){
+
+    html {
+        font-size: 12px;
+    }
+
+    img bannière
+
+    h1 {
+        font-size: 3 rem;
+    }
+
