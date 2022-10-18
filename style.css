@@ -131,11 +131,22 @@ h1 {
     padding-right: 30px;
 }
 
-.img-courses{
-    width: 100%;
-    max-width: 50%;
-    height: fit-content;
+.slider{
+    height: 65vh;
+    position: relative;
     padding-left: 30px;
+
+    overflow: hidden;
+}
+
+
+.img-slides{
+    /*object-fit: cover;
+    max-width: 50%;*/
+   
+    float: right;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -289,7 +300,7 @@ footer {
 
 /*barre navigation => menu burger*/
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px){
 
         html {
         font-size: 10px;
@@ -351,6 +362,7 @@ footer {
         justify-content: space-between;
         margin: 30px 30px;
         height: auto;
+        width: auto;
          }
   
         .courses {
