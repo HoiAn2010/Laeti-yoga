@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 
 :root {
@@ -14,7 +13,7 @@
     --text-color: #394759;
 }
 /*bonne pratique de taille px=>rem qui est relatif au parent
-h1: 2.5remà l'élément racine root
+h1: 2.5rem à l'élément racine root
 h2: 2.25rem
 h3: 2rem
 h4: 1.75rem
@@ -43,7 +42,6 @@ nav {
     justify-items: center;
     background-color: var(--color-1);
     margin-top: 20px;
-
 }
 
 .logo {
@@ -83,7 +81,7 @@ nav {
 .top-content {
     height: 100vh;
     background-image: url("bannière.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -148,7 +146,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin: 50px 50px;
-    padding: 20px 80px 20px 0px;
+    padding: 20px 0px 20px 0px;
     height: auto;
  
 }
@@ -157,7 +155,7 @@ h1 {
 
 .all-prices {
     display: flex;
-    padding-left: 10px;
+    margin: 10px auto 20px auto;
     width: 45rem;
 }
 
@@ -165,7 +163,7 @@ h1 {
     background-color: var(--color-3);
     width: 100%;
     height: 300px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .name {
@@ -208,7 +206,7 @@ h1 {
 .my-place{
     display: flex;
     justify-content: space-around;
-    background-color: pink;
+   /* background-color: pink;*/
 }
 
 .details-adress {
@@ -226,16 +224,6 @@ h1 {
     margin: 0px 20px;
 }
 
-button {
-    width: 100px;
-    margin: 20px 0px 20px 80px;
-    color: var(--color-2);
-    background-color: black;
-    padding: 10px;
-    font-family: 'Baloo 2', cursive;
-    box-shadow: 0px 10px 13px -7px #000000, -4px 0px 25px 2px rgba(86,115,112,0);
-}
-
 label {
     text-align: center;
     margin: 5px;
@@ -243,7 +231,7 @@ label {
 
 input {
     width: 120%; 
-    height: 20px;
+    height: 30px;
     box-shadow: 0px 10px 13px -7px #000000;
     border-color: var(--color-3);
     font-family: cursive;
@@ -259,6 +247,15 @@ textarea {
     color:#567370;
 }
 
+button {
+    width: 100px;
+    margin: 20px 0px 20px 0px;
+    color: var(--color-2);
+    background-color: black;
+    padding: 10px;
+    font-family: 'Baloo 2', cursive;
+    box-shadow: 0px 10px 13px -7px #000000, -4px 0px 25px 2px rgba(86,115,112,0);
+}
 
 .contact h2 {
     padding-left: 100px;
@@ -288,29 +285,219 @@ footer {
 
 
 
-/* responsive*/
+/* ______RESPONSIVE________ */
 
 /*barre navigation => menu burger*/
 
-/* @media screen and (max-width: 480px){
+@media screen and (max-width:768px){
 
-    html {
-        font-size: 12px;
-    }
+        html {
+        font-size: 10px;
+        }
 
-    img bannière
+        h1 {
+        font-size: 3rem; 
+        }
+    
+        h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        }
 
-    h1 {
-        font-size: 3 rem;
-    }
+    /*img bannière*/
+
+        .top-content{
+            height: 46vh;
+            max-width: 100%;
+            background-image: url("bannière.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+   
+
+    /*blocs textuel-images*/
+
+        .text-main{
+        text-align: justify;   
+        }
+
+    /* présentation */
+    
+        .presentation {
+        padding: 10px;
+        }
+   
+        #about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 30px 30px;
+        height: auto;
+        }
+
+        .img-laeti {
+        width: 100%;
+        max-width:50%;
+        display: block;
+        margin: auto;
+        }
+    
+    /* part yoga classes */
+
+        #yoga-class {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 30px 30px;
+        height: auto;
+         }
+  
+        .courses {
+        padding-right: 0px;
+        }
+  
+        .img-courses {
+        width: 100%;
+        max-width: 60%;
+        display: block;
+        margin: auto;
+         }
 
 
-    low-content{
+     /* part prices and schedule */
+
+         #prices-schedules {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+        padding: 20px 0px 30px 0px;
+        height: auto;
+        }
+
+
+    /* section prices */
+
+        .all-prices {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            width: 90%;
+         }       
+
+        .card {
+            background-color: var(--color-3);
+            width: 50%;
+            height: 300px;
+            margin: 20px;
+         }
+
+    /*.name {
+    text-align: center;
+    background-color: var(--color-4);
+    padding: 10px;
+    }*/
+
+    /*.details {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 10px;
+    }*/
 
-    .social {
-    flex-direction: row;
-    justify-content: center;
-    }
+
+    /* section schedules */
+
+    .all-schedules {
+        width: 45em;
+        height: 200px;
+        padding-top: 15px;
+        text-align: center;
+        }
+
+    /*2eme section informations*/
+
+        .low-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .adress{
+            margin:30px 30px;
+        }
+
+        /* formulaire */
+
+        .contact {
+            padding: 30px 30px;
+        }
+
+        .contact h2 {
+            padding-left: 0px;
+        }
+
+        label {
+            text-align: center;
+            margin: 5px;
+        }
+        
+        input {
+            width: 100%; 
+            height: 20px;
+            box-shadow: 0px 10px 13px -7px #000000;
+            border-color: var(--color-3);
+            font-family: cursive;
+            color:#567370;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 80px;
+            box-shadow: 0px 10px 13px -7px #000000;
+            border-color:var(--color-3);
+            font-family: cursive;
+            color:#567370;
+            margin-bottom: 30px;
+        }
+
+        button {
+        width: 100px;
+        margin: 20px 0px;
+        color: var (--color-2);
+        background-color: black;
+        padding: 10px;
+        font-family: cursive;
+        box-shadow: 0px 10px 13px -7px #000000, -4px 0px 25px 2px rgba(86,115,112,0);
+        /*position à droite*/
+        }
+
+ 
+    /*------ ME SUIVRE -----*/
+        .follow {
+        padding: 30px 30px;
+         }
+
+        .social{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            list-style: none;
+            text-align: center;
+            margin: 20px 10px;
+        }
+    
+        .icone {
+            margin: 10px;
+        }
+    
+
+    /*pied de page*/
+    
+        footer {
+            background-color: #567370;
+            color: #f2f2f2;
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+            margin-bottom: 400px;
+        }
