@@ -69,14 +69,13 @@ nav {
     font-size: 1.5rem;
 }
 
-
 .navigation a:hover {
     background-color: var(--color-2);
     color: var(--color-1);
     padding: 10px 20px;
 }
 
-/*1er bloc titre*/
+/* section TITRE */
 
 .top-content {
     height: 100vh;
@@ -86,7 +85,7 @@ nav {
 }
 
 h1 {
-    color: #394759;
+    color: var(--text-color);
     font-size: 3.5rem;
     text-align: left;
     padding-top: 20px;
@@ -94,9 +93,9 @@ h1 {
     margin: auto;
 }
 
-/*blocs textuel*/
+/* section TEXTE */
 
-    /*section about me*/
+    /* section about me */
 
 #about-me {
     display: flex;
@@ -117,7 +116,7 @@ h1 {
     padding-left: 30px;
     }
 
-    /* part yoga classes*/
+    /* part yoga classes */
 
 #yoga-class {
     display: flex;
@@ -127,7 +126,7 @@ h1 {
     height: auto;
 }
 
-.courses {
+.lessons {
     padding-right: 30px;
 }
 
@@ -137,18 +136,19 @@ h1 {
     position: relative;
 }
 
-
 .img-slider{
     position: absolute;
     width: 100%;
     height: 100%;
-   
+    opacity: 0;
 }
 
-
+.img-slider.active {
+    opacity: 1;
+}
 
 .suivant, .precedent {
-    color: red;
+    color: var(--text-color);
     font-size: 1.5rem;
     position: absolute;
     top: 50%;
@@ -157,7 +157,6 @@ h1 {
 .suivant {
     right: 1rem;
 }
-
 .precedent {
     left: 1rem;
 }
@@ -229,16 +228,21 @@ h1 {
 .my-place{
     display: flex;
     justify-content: space-around;
+    padding-top: 2.2rem;
    /* background-color: pink;*/
 }
 
 .details-adress {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
     margin: 10px;
+    padding-right: 10px;
     text-align: center;
 }
+
+
+
 
 /*------ ME CONTACTER -----*/
 .contact {
@@ -275,8 +279,9 @@ button {
     margin: 20px 0px 20px 0px;
     color: var(--color-2);
     background-color: black;
-    padding: 10px;
+    padding: 5px;
     font-family: 'Baloo 2', cursive;
+    font-size: 0.9rem;
     box-shadow: 0px 10px 13px -7px #000000, -4px 0px 25px 2px rgba(86,115,112,0);
 }
 
@@ -308,14 +313,14 @@ footer {
 
 
 
-/* ______RESPONSIVE________ */
+/* ______RESPONSIVE TABLETTE________ */
 
 /*barre navigation => menu burger*/
 
 @media screen and (max-width: 768px){
 
         html {
-        font-size: 10px;
+        font-size: 14px;
         }
 
         h1 {
@@ -326,6 +331,15 @@ footer {
         font-size: 2.5rem;
         text-align: center;
         }
+
+        h3{
+            font-size: 1.5rem;
+        }
+
+    p {
+        font-size:1.2rem;
+    }    
+
 
     /*img bannière*/
 
@@ -364,6 +378,7 @@ footer {
         max-width:50%;
         display: block;
         margin: auto;
+        padding: 0px;
         }
     
     /* part yoga classes */
@@ -377,16 +392,25 @@ footer {
         width: auto;
          }
   
-        .courses {
+        .lessons {
         padding-right: 0px;
         }
   
-        .img-courses {
+        .slider{
+        height: 27rem;
+        width: 35rem;
+        position: relative;
+        margin-left: 7rem;
+        }
+
+
+        .img-slider{
+        position: absolute;
         width: 100%;
-        max-width: 60%;
-        display: block;
-        margin: auto;
-         }
+        height: 100%;
+        opacity: 0;
+        }
+        
 
 
      /* part prices and schedule */
@@ -416,17 +440,221 @@ footer {
             margin: 20px;
          }
 
-    /*.name {
-    text-align: center;
-    background-color: var(--color-4);
-    padding: 10px;
-    }*/
+   
 
-    /*.details {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-    }*/
+    /* section schedules */
+
+    .all-schedules {
+        width: 45em;
+        height: 200px;
+        padding-top: 15px;
+        text-align: center;
+        }
+
+    /*2eme section informations*/
+
+        .low-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .adress{
+            margin:30px 30px;
+        }
+
+        /* formulaire */
+
+        .contact {
+            padding: 30px 30px;
+        }
+
+        .contact h2 {
+            padding-left: 0px;
+        }
+
+        label {
+            text-align: center;
+            margin: 5px;
+        }
+        
+        input {
+            width: 100%; 
+            height: 20px;
+            box-shadow: 0px 10px 13px -7px #000000;
+            border-color: var(--color-3);
+            font-family: cursive;
+            color:#567370;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 80px;
+            box-shadow: 0px 10px 13px -7px #000000;
+            border-color:var(--color-3);
+            font-family: cursive;
+            color:#567370;
+            margin-bottom: 30px;
+        }
+
+        button {
+        width: 100px;
+        margin: 20px 265px;
+        color: var (--color-2);
+        background-color: black;
+        padding: 10px;
+        font-family: cursive;
+        box-shadow: 0px 10px 13px -7px #000000, -4px 0px 25px 2px rgba(86,115,112,0);
+        /*position à droite*/
+        }
+
+ 
+    /*------ ME SUIVRE -----*/
+        .follow {
+        padding: 30px 30px;
+         }
+
+        .social{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            list-style: none;
+            text-align: center;
+            margin: 20px 10px;
+        }
+    
+        .icone {
+            margin: 10px;
+        }
+    
+
+    /*pied de page*/
+    
+        footer {
+            background-color: #567370;
+            color: #f2f2f2;
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+            margin-bottom: 150px;
+        }
+
+
+    /* ______RESPONSIVE PORTABLE________ */
+
+        @media screen and (max-width: 412px){
+
+        html {
+        font-size: 10px;
+        }
+
+        h1 {
+        font-size: 2.5rem; 
+        }
+    
+        h2 {
+        font-size: 2rem;
+        text-align: center;
+        }
+
+    /*img bannière*/
+
+        .top-content{
+            height: 30vh;
+            max-width: 100%;
+            background-image: url("bannière.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+   
+
+    /* blocs textuel-images */
+
+        .text-main{
+        text-align: justify;   
+        }
+
+    /* présentation */
+    
+        .presentation {
+        padding: 10px;
+        }
+   
+        #about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 30px 30px;
+        height: auto;
+        }
+
+        .img-laeti {
+        width: 100%;
+        max-width:50%;
+        display: block;
+        margin: auto;
+        padding: 0px;
+        }
+    
+        /* part yoga classes */
+
+            #yoga-class {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            margin: 30px 30px;
+            height: auto;
+            width: auto;
+            }
+    
+            .lessons {
+            padding-right: 0px;
+            }
+    
+            .slider{
+            height: 27rem;
+            width: 30rem;
+            position: relative;
+            margin-left: 3rem;
+            }
+
+
+            .img-slider{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            }
+            
+
+
+     /* part prices and schedule */
+
+         #prices-schedules {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+        padding: 20px 0px 30px 0px;
+        height: auto;
+        }
+
+
+    /* section prices */
+
+        .all-prices {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            width: 90%;
+         }       
+
+        .card {
+            background-color: var(--color-3);
+            width: 50%;
+            height: 300px;
+            margin: 20px;
+         }
 
 
     /* section schedules */
@@ -486,7 +714,7 @@ footer {
 
         button {
         width: 100px;
-        margin: 20px 0px;
+        margin: 20px 265px;
         color: var (--color-2);
         background-color: black;
         padding: 10px;
@@ -523,5 +751,5 @@ footer {
             text-align: center;
             margin-top: 10px;
             padding: 10px;
-            margin-bottom: 400px;
+            margin-bottom: 150px;
         }
