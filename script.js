@@ -1,7 +1,15 @@
-/*menu burger*/
+/*----- Menu burger -----*/
+let toggle = document.querySelector(".toggle");
+let body = document.querySelector("body"); /*? voir si on ne peut pas faire avec nav*/
+
+toggle.addEventListener("click", function () {
+  body.classList.toggle("open");
+});
 
 
-/*slider*/
+
+/*----- Slider -----*/
+
 let imageOfSlider = document.getElementsByClassName("img-slider");
 
 let moveImage = 0;
@@ -29,14 +37,7 @@ suivant.addEventListener('click', function() {
 )
 
 
-/* reprendre à 13:12 de la vidéo Ben*/
-
-
-
-
-
-/*----Message retour de contact pour votre message. Je reviendrai vers vous sous 48h. Namaste*/
-
+/*----- Message retour de contact -----*/
 
 const firstName = document.querySelector("#firstName");
 
