@@ -1,851 +1,834 @@
 /*reset*/
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --color-1: #567370;
-    --color-2: #f2f2f2;
-    --color-3: #c6dbdb;
-    --color-4: #9fb6bf;
-    --text-color: #394759;
-}
-/*bonne pratique de taille px=>rem qui est relatif au parent
-h1: 2.5rem à l'élément racine root
-h2: 2.25rem
-h3: 2rem
-h4: 1.75rem
-p: 1rem
-
-en @media (max-width: 480px) {html {font-size: 12px}} */
-
-
-body{
-    background-color: var(--color-2);
-    font-family: 'Baloo 2', cursive;
-    font-size: 16px;
+  --color-1: #567370;
+  --color-2: #f2f2f2;
+  --color-3: #c6dbdb;
+  --color-4: #9fb6bf;
+  --text-color: #394759;
 }
 
-h2, h3, p {
-    color: var(--text-color);
-    margin-top: 10px;
-    margin-bottom: 10px;
+body {
+  background-color: var(--color-2);
+  font-family: "Baloo 2", cursive;
+  font-size: 16px;
 }
 
+h2,
+h3,
+p {
+  color: var(--text-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ______DESKTOP________ */
 
 /* header - MENU NAVIGATION */
 
 header {
-    position: sticky;
-    width: 100%;
-    height: 8vh;
-    top: 0;
-    left: 0;
-    background-color: var(--color-1);
-    z-index: 1;
+  position: sticky;
+  width: 100%;
+  height: 8vh;
+  top: 0;
+  left: 0;
+  background-color: var(--color-1);
+  z-index: 1;
 }
 
 nav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
 }
 
 .logo {
-    width: 4rem;
-    height: 100%; 
+  width: 6vw;
+  height: 100%;
 }
 
 .toggle {
-    display: none;
+  display: none;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    width: 47rem;
-    margin-right: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 100%;
 }
 
 .menu a {
-    text-decoration: none;
-    color: var(--color-2);
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--color-2);
+  font-size: 1.5rem;
 }
 
 .menu a:hover {
-    background-color: var(--color-2);
-    color: var(--color-1);
-    padding: 10px 20px 10px 20px;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  padding: 10px 20px 10px 20px;
 }
 
-
-/* section TITRE */
+/* section - TITRE */
 
 .top-content {
-    height: 100vh;
-    background-image: url("bannière.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  
+  height: 100vh;
+  background-image: url("bannière.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 h1 {
-    color: var(--text-color);
-    font-size: 3.5rem;
-    text-align: left;
-    padding-top: 3.5rem;
-    padding-left: 1rem;
-    margin: auto;
+  color: var(--text-color);
+  font-size: 3.5rem;
+  text-align: left;
+  padding-top: 5rem;
+  padding-left: 1.5rem;
 }
 
 /* section TEXTE */
 
-    /* section about me */
+/* article - A propos */
 
 #about-me {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 50px;
-    padding: 20px 0px;
-    height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 4rem;
+  padding: 20px 0px;
+  height: auto;
 }
 
 .img-laeti {
-    width: 30rem;
-    /*max-width:50%;*/
-    height: 30rem;
-    padding-right: 30px;
+  width: 30rem;
+  height: 30rem;
+  padding-right: 3rem;
 }
 
 .presentation {
-    padding-left: 30px;
-    }
+  padding-left: 30px;
+}
 
-    /* part yoga classes */
+.text-main {
+  text-align: justify;
+}
+
+/* article - yoga classes */
 
 #yoga-class {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 50px;
-    padding: 20px 0px;
-    height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 4rem;
+  padding: 20px 0px;
+  height: auto;
 }
 
 .lessons {
-    padding-right: 30px;
+  padding-right: 30px;
 }
 
-.slider{
-    height: 30rem;
-    width:50rem;
-    position: relative;
+.slider {
+  height: 30rem;
+  width: 50rem;
+  position: relative;
 }
 
-.img-slider{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+.img-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 
 .img-slider.active {
-    opacity: 1;
+  opacity: 1;
 }
 
-.suivant, .precedent {
-    color: var(--text-color);
-    font-size: 1.5rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.suivant,
+.precedent {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .suivant {
-    right: 1rem;
+  right: 1rem;
 }
 .precedent {
-    left: 1rem;
+  left: 1rem;
 }
 
-
-    /* part prices and schedule */
+/* part prices and schedule */
 
 #prices-schedules {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 50px;
-    padding: 20px 0px 20px 0px;
-    height: auto;
- 
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 4rem;
+  padding: 20px 0px 20px 0px;
+  height: auto;
 }
 
-    /* section prices */
+/* section prices */
 
 .all-prices {
-    display: flex;
-    margin: 10px auto 20px auto;
-    width: 45rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto 20px auto;
+}
+.prices {
+  min-width: 50%;
 }
 
 .card {
-    background-color: var(--color-3);
-    width: 100%;
-    height: 300px;
-    margin: 20px;
+  background-color: var(--color-3);
+  min-width: 10em;
+  height: 300px;
+  margin: 20px;
 }
 
 .name {
-    text-align: center;
-    background-color: var(--color-4);
-    padding: 10px;
+  text-align: center;
+  background-color: var(--color-4);
+  padding: 10px;
 }
 
 .details {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
 }
 
+.collect {
+  flex-direction: column;
+  align-items: center;
+}
 
-    /* section schedules */
+/* section schedules */
+
+.schedules {
+  display: flex;
+  flex-direction: column;
+}
 
 .all-schedules {
-    width: 15em;
-    height: 300px;
-    padding-top: 30px;
-    margin-right: 30px;
+  width: 15em;
+  height: 300px;
+  padding-top: 30px;
+  margin-right: 30px;
 }
-
 
 /* 2eme section informations */
 .low-content {
-    background-color: var(--color-4);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+  background-color: var(--color-4);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .low-content h2 {
-    text-align: center;
+  text-align: center;
 }
 
 /*------ ME TROUVER -----*/
 
-.my-place{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2.2rem;
-   /* background-color: pink;*/
+.my-place {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.2rem;
 }
 
 .details-adress {
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    margin: 10px;
-    padding-right: 10px;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
-
-
-
 
 /*------ ME CONTACTER -----*/
 .contact {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
 }
 
 label {
-    text-align: center;
-    margin: 5px;
+  text-align: center;
+  margin: 5px;
 }
 
 input {
-    width: 120%; 
-    height: 30px;
-    box-shadow: 0px 10px 13px -7px #000000;
-    border-color: var(--color-3);
-    font-family: cursive;
-    color:#567370;
+  width: 120%;
+  height: 30px;
+  box-shadow: 0px 10px 13px -7px #000000;
+  border-color: var(--color-3);
+  font-family: cursive;
+  color: #567370;
 }
 
 textarea {
-    width: 120%;
-    height: 80px;
-    box-shadow: 0px 10px 13px -7px #000000;
-    border-color:var(--color-3);
-    font-family: cursive;
-    color:#567370;
+  width: 120%;
+  height: 80px;
+  box-shadow: 0px 10px 13px -7px #000000;
+  border-color: var(--color-3);
+  font-family: cursive;
+  color: #567370;
 }
 
 button {
-    width: 100px;
-    margin: 20px 0px 20px 100px;
-    color: var(--color-2);
-    background-color: black;
-    padding: 5px;
-    font-family: 'Baloo 2', cursive;
-    font-size: 0.9rem;
-    box-shadow: 0px 10px 13px -7px #000000, -4px 0px 25px 2px rgba(86,115,112,0);
+  width: 100px;
+  margin: 20px 0px 20px 100px;
+  color: var(--color-2);
+  background-color: black;
+  padding: 5px;
+  font-family: "Baloo 2", cursive;
+  font-size: 0.9rem;
+  box-shadow: 0px 10px 13px -7px #000000,
+    -4px 0px 25px 2px rgba(86, 115, 112, 0);
 }
 
 .contact h2 {
-    padding-left: 100px;
+  padding-left: 100px;
 }
-    
+
 /*------ ME SUIVRE -----*/
-.social{
-    list-style: none;
-    text-align: center;
-    margin: 30px 10px;
+.social {
+  list-style: none;
+  text-align: center;
+  margin: 30px 10px;
 }
 
 .icone {
-    margin: 10px;
+  margin: 10px;
 }
-
 
 /*pied de page*/
 
 footer {
+  background-color: #567370;
+  color: #f2f2f2;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/*
+
+/* ______RESPONSIVE TABLETTE________ */
+
+/*barre navigation */
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  /* Menu navigation */
+  header {
+    height: 4.5vh;
+  }
+
+  .menu {
+    margin-right: 2rem;
+  }
+
+  .menu a:hover {
+    padding: 10px 20px 8px 20px;
+  }
+
+  /*img bannière*/
+
+  .top-content {
+    height: 65vh;
+    max-width: 100%;
+    background-image: url("bannière.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /*blocs textuel-images*/
+
+  .text-main {
+    text-align: justify;
+  }
+
+  /* présentation */
+
+  .presentation {
+    padding: 10px;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 30px;
+    height: auto;
+  }
+
+  .img-laeti {
+    width: 100%;
+    max-width: 60%;
+    display: block;
+    margin: auto;
+    padding: 0px;
+  }
+
+  /* part yoga classes */
+
+  #yoga-class {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 30px 30px;
+    height: auto;
+    width: auto;
+  }
+
+  .lessons {
+    padding-right: 0px;
+  }
+
+  .slider {
+    height: 27rem;
+    width: 30rem;
+    position: relative;
+    margin: auto;
+  }
+
+  .img-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  /* part prices and schedule */
+
+  #prices-schedules {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px;
+    padding: 20px 0px 30px 0px;
+    height: auto;
+  }
+
+  /* section prices */
+
+  .all-prices {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    /*width: 90%;*/
+  }
+
+  .card {
+    background-color: var(--color-3);
+    width: 50%;
+    height: 24rem;
+    margin: 1.5rem;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  /* section schedules */
+
+  .all-schedules {
+    width: 37em;
+    height: 200px;
+    padding-top: 15px;
+    text-align: center;
+    margin: auto;
+  }
+
+  /*2eme section informations*/
+
+  .low-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .adress {
+    margin: 30px 30px;
+  }
+
+  /* formulaire */
+
+  .contact {
+    padding: 30px 30px;
+  }
+
+  .contact h2 {
+    padding-left: 0px;
+  }
+
+  label {
+    text-align: center;
+    margin: 5px;
+  }
+
+  input {
+    width: 100%;
+    height: 20px;
+    box-shadow: 0px 10px 13px -7px #000000;
+    border-color: var(--color-3);
+    font-family: cursive;
+    color: #567370;
+  }
+
+  textarea {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 10px 13px -7px #000000;
+    border-color: var(--color-3);
+    font-family: cursive;
+    color: #567370;
+    margin-bottom: 30px;
+  }
+
+  button {
+    width: 100px;
+    margin: 20px auto;
+    color: var (--color-2);
+    background-color: black;
+    padding: 10px;
+    font-family: cursive;
+    box-shadow: 0px 10px 13px -7px #000000,
+      -4px 0px 25px 2px rgba(86, 115, 112, 0);
+  }
+
+  /*------ ME SUIVRE -----*/
+  .follow {
+    padding: 30px 30px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    margin: 20px 10px;
+  }
+
+  .icone {
+    margin: 10px;
+  }
+
+  /*pied de page*/
+
+  footer {
     background-color: #567370;
     color: #f2f2f2;
     text-align: center;
     margin-top: 10px;
     padding: 10px;
+  }
 }
 
+/* ______RESPONSIVE PORTABLE________ */
 
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 10px;
+  }
 
-/* ______RESPONSIVE TABLETTE________ */
+  h1 {
+    font-size: 2.5rem;
+  }
 
-/*barre navigation => menu burger*/
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-@media screen and (max-width: 768px){
+  /* --menu burger-- */
+  header {
+    height: 3.5vh;
+  }
 
-        html {
-        font-size: 14px;
-        }
+  .toggle {
+    display: block;
+    font-size: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    z-index: 50;
+  }
 
-        h1 {
-        font-size: 3rem; 
-        }
+  .ouvrir {
+    display: block;
+    color: var(--color-2);
+  }
+
+  .fermer {
+    display: none;
+    color: var(--color-2);
+  }
+
+  .open .ouvrir {
+    display: none;
+  }
+
+  .open .fermer {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 30vh;
+    background-color: var(--color-1);
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateY(-100%);
+  }
+
+  .open .menu {
+    transform: translateY(0);
+  }
+
+  .menu a:hover {
+    background-color: none;
+  }
+
+  /*img bannière*/
+
+  .top-content {
+    height: 43vh;
+    max-width: 100%;
+    background-image: url("bannière.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* blocs textuel-images */
+
+  .text-main {
+    text-align: justify;
+  }
+
+  /* présentation */
+
+  .presentation {
+    padding: 10px;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 30px;
+    height: auto;
+  }
+
+  .img-laeti {
+    width: 100%;
+    max-width: 70%;
+    display: block;
+    margin: auto;
+    padding: 0px;
+  }
+
+  /* part yoga classes */
+
+  #yoga-class {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 30px 30px;
+    height: auto;
+    width: auto;
+  }
+
+  .lessons {
+    padding-right: 0px;
+  }
+
+  .slider {
+    height: 27rem;
+    width: 25rem;
+    position: relative;
+    margin-left: 5rem;
+  }
+
+  .img-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  /* part prices and schedule */
+
+  #prices-schedules {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px;
+    padding: 20px 0px 30px 0px;
+    height: auto;
+  }
+
+  /* section prices */
+
+  .all-prices {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
     
-        h2 {
-        font-size: 2.5rem;
-        text-align: center;
-        }
-
-        h3{
-            font-size: 1.5rem;
-        }
-
-    p {
-        font-size:1.2rem;
-    }    
-
-    /* Menu navigation ok*/ 
-        header {
-        height: 4.5vh;
-        }
-
-        .menu {
-         margin-right: 2rem;
-        }
-
-        .menu a:hover {
-        padding: 10px 20px 8px 20px;
-        }
-
-    /*img bannière*/
-
-        .top-content{
-            height: 46vh;
-            max-width: 100%;
-            background-image: url("bannière.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-   
-
-    /*blocs textuel-images*/
-
-        .text-main{
-        text-align: justify;   
-        }
-
-    /* présentation */
-    
-        .presentation {
-        padding: 10px;
-        }
-   
-        #about-me {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 30px 30px;
-        height: auto;
-        }
-
-        .img-laeti {
-        width: 100%;
-        max-width:50%;
-        display: block;
-        margin: auto;
-        padding: 0px;
-        }
-    
-    /* part yoga classes */
-
-        #yoga-class {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        margin: 30px 30px;
-        height: auto;
-        width: auto;
-         }
-  
-        .lessons {
-        padding-right: 0px;
-        }
-  
-        .slider{
-        height: 27rem;
-        width: 30rem;
-        position: relative;
-        margin-left: 10rem;
-        }
-
-
-        .img-slider{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        }
-        
-
-
-     /* part prices and schedule */
-
-         #prices-schedules {
-        display: flex;
-        flex-direction: column;
-        margin: 30px 30px;
-        padding: 20px 0px 30px 0px;
-        height: auto;
-        }
-
-
-    /* section prices */
-
-        .all-prices {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-            width: 90%;
-         }       
-
-        .card {
-            background-color: var(--color-3);
-            width: 50%;
-            height: 24rem;
-            margin: 1.5rem;
-         }
-
-         .details {
-        display: flex;
-        justify-content: space-between;
-        margin: 10px;
-        }
-
-   
-
-    /* section schedules */
-
-    .all-schedules {
-        width: 45em;
-        height: 200px;
-        padding-top: 15px;
-        text-align: center;
-        }
-
-    /*2eme section informations*/
-
-        .low-content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .adress{
-            margin:30px 30px;
-        }
-
-        /* formulaire */
-
-        .contact {
-            padding: 30px 30px;
-        }
-
-        .contact h2 {
-            padding-left: 0px;
-        }
-
-        label {
-            text-align: center;
-            margin: 5px;
-        }
-        
-        input {
-            width: 100%; 
-            height: 20px;
-            box-shadow: 0px 10px 13px -7px #000000;
-            border-color: var(--color-3);
-            font-family: cursive;
-            color:#567370;
-        }
-        
-        textarea {
-            width: 100%;
-            height: 80px;
-            box-shadow: 0px 10px 13px -7px #000000;
-            border-color:var(--color-3);
-            font-family: cursive;
-            color:#567370;
-            margin-bottom: 30px;
-        }
-
-        button {
-        width: 100px;
-        margin: 20px 265px;
-        color: var (--color-2);
-        background-color: black;
-        padding: 10px;
-        font-family: cursive;
-        box-shadow: 0px 10px 13px -7px #000000, -4px 0px 25px 2px rgba(86,115,112,0);
-        /*position à droite*/
-        }
-
- 
-    /*------ ME SUIVRE -----*/
-        .follow {
-        padding: 30px 30px;
-         }
-
-        .social{
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            list-style: none;
-            text-align: center;
-            margin: 20px 10px;
-        }
-    
-        .icone {
-            margin: 10px;
-        }
-    
-
-    /*pied de page*/
-    
-        footer {
-            background-color: #567370;
-            color: #f2f2f2;
-            text-align: center;
-            margin-top: 10px;
-            padding: 10px;
-            margin-bottom: 30rem;
-        }
-    }
-
-    /* ______RESPONSIVE PORTABLE________ */
-
-        @media screen and (max-width: 412px){
-
-        html {
-        font-size: 10px;
-        }
-
-        h1 {
-        font-size: 2.5rem; 
-        }
-    
-        h2 {
-        font-size: 2rem;
-        text-align: center;
-        }
-
-        /* --menu burger-- */
-        header {
-        height: 3.5vh;
-        }
-
-        .toggle {
-            display: block;
-            font-size: 2rem;
-            margin-right: 2rem;
-            position: relative;
-            z-index: 50;
-        }
-
-        .ouvrir {
-            display: block;
-            color: var(--color-2);
-        }
-
-        .fermer {
-            display: none;
-             color: var(--color-2); 
-        }
-
-        .open .ouvrir {
-            display: none;
-        }
-        
-        .open .fermer {
-            display: block;
-        }
-
-        .menu {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 30%;
-            height: 30vh;
-            background-color: var(--color-1);
-            flex-direction: column;
-            justify-content: space-around;
-            transform: translateY(-100%); 
-        }
-
-        .open .menu {
-        transform: translateY(0);
-        }
-
-        .menu a:hover {
-            background-color: none;
-        }
-
-
-    /*img bannière*/
-
-        .top-content{
-            height: 30vh;
-            max-width: 100%;
-            background-image: url("bannière.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-
-    /* blocs textuel-images */
-
-        .text-main{
-        text-align: justify;   
-        }
-
-    /* présentation */
-    
-        .presentation {
-        padding: 10px;
-        }
-   
-        #about-me {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 30px 30px;
-        height: auto;
-        }
-
-        .img-laeti {
-        width: 100%;
-        max-width:70%;
-        display: block;
-        margin: auto;
-        padding: 0px;
-        }
-    
-        /* part yoga classes */
-
-            #yoga-class {
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: space-between;
-            margin: 30px 30px;
-            height: auto;
-            width: auto;
-            }
-    
-            .lessons {
-            padding-right: 0px;
-            }
-    
-            .slider{
-            height: 27rem;
-            width: 25rem;
-            position: relative;
-            margin-left: 5rem;
-            }
-
-
-            .img-slider{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            }
-            
-
-
-     /* part prices and schedule */
-
-         #prices-schedules {
-        display: flex;
-        flex-direction: column;
-        margin: 30px 20px;
-        padding: 20px 0px 30px 0px;
-        height: auto;
-        }
-
-
-    /* section prices */
-
-        .all-prices {
-            display: flex;
-            justify-content: space-between;
-            margin: 15px 0px;
-            width: 100%;
-         }       
-
-        .card {
-            background-color: var(--color-3);
-            height: 300px;
-            margin: 5px;
-         }
-
-        .collect {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;;
-        margin: 10px;
-        }
-
-
-
-    /* section schedules */
-
-    .all-schedules {
-        width: 37rem;
-        height: 200px;
-        padding: 15px 0px;
-        text-align: center;
-        }
-
-    .schedules {
-        margin: 30px 0px;
-    }
-    /*2eme section informations*/
-
-        .low-content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-bottom: 0px;
-        }
-
-        .adress{
-            margin:30px 30px;
-        }
-
-        /* formulaire */
-
-        .contact {
-            padding: 30px 0px;
-        }
-
-        .contact h2 {
-            padding-left: 0px;
-        }
-
-        label {
-            text-align: center;
-            margin: 5px;
-        }
-        
-        input {
-            width: 100%; 
-            height: 20px;
-            box-shadow: 0px 10px 13px -7px #000000;
-            border-color: var(--color-3);
-            font-family: cursive;
-            color:#567370;
-        }
-        
-        textarea {
-            width: 100%;
-            height: 80px;
-            box-shadow: 0px 10px 13px -7px #000000;
-            border-color:var(--color-3);
-            font-family: cursive;
-            color:#567370;
-            margin-bottom: 30px;
-        }
-
-        button {
-        width: 100px;
-        margin: 20px 120px;
-        color: var (--color-2);
-        background-color: black;
-        padding: 10px;
-        font-family: cursive;
-        box-shadow: 0px 10px 13px -7px #000000, -4px 0px 25px 2px rgba(86,115,112,0);
-        }
-
- 
-    /*------ ME SUIVRE -----*/
-        .follow {
-        padding: 30px 30px 10px 30px;;
-         }
-
-        .social{
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            list-style: none;
-            text-align: center;
-            margin: 20px 10px 10px 10px;
-        }
-    
-        .icone {
-            margin: 10px;
-        }
-    
-
-    /*pied de page*/
-    
-        footer {
-            background-color: #567370;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 10px;
-            margin-top: 0px;
-            margin-bottom: 25rem;
-        }
-    }
+  }
+
+  .prices {
+    width: auto;
+  }
+
+  .card {
+    background-color: var(--color-3);
+    min-width: auto;
+    height: 300px;
+    margin: 5px;
+  }
+
+  .collect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+  }
+
+  /* section schedules */
+
+  .all-schedules {
+    width: 34rem;
+    height: 200px;
+    padding: 15px 0px;
+    text-align: center;
+  }
+
+  .schedules {
+    margin: 30px 0px;
+  }
+  /*2eme section informations*/
+
+  .low-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0px;
+  }
+
+  .adress {
+    margin: 30px 30px;
+  }
+
+  /* formulaire */
+
+  .contact {
+    padding: 30px 0px;
+  }
+
+  .contact h2 {
+    padding-left: 0px;
+  }
+
+  label {
+    text-align: center;
+    margin: 5px;
+  }
+
+  input {
+    width: 100%;
+    height: 20px;
+    box-shadow: 0px 10px 13px -7px #000000;
+    border-color: var(--color-3);
+    font-family: cursive;
+    color: #567370;
+  }
+
+  textarea {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 10px 13px -7px #000000;
+    border-color: var(--color-3);
+    font-family: cursive;
+    color: #567370;
+    margin-bottom: 30px;
+  }
+
+  button {
+    width: 100px;
+    margin: 20px 120px;
+    color: var (--color-2);
+    background-color: black;
+    padding: 10px;
+    font-family: cursive;
+    box-shadow: 0px 10px 13px -7px #000000,
+      -4px 0px 25px 2px rgba(86, 115, 112, 0);
+  }
+
+  /*------ ME SUIVRE -----*/
+  .follow {
+    padding: 30px 30px 10px 30px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    margin: 20px 10px 10px 10px;
+  }
+
+  .icone {
+    margin: 10px;
+  }
+
+  /*pied de page*/
+
+  footer {
+    background-color: #567370;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0rem;
+  }
+}
