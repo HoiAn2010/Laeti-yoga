@@ -110,9 +110,9 @@ h1 {
 }
 
 .img-laeti {
-  width: 30rem;
-  height: 30rem;
-  padding-right: 3rem;
+  width: 100%;
+  height: auto;
+  
 }
 
 .presentation {
@@ -225,7 +225,7 @@ h1 {
   width: 15em;
   height: 300px;
   padding-top: 30px;
-  margin-right: 30px;
+ 
 }
 
 /* 2eme section informations */
@@ -354,7 +354,7 @@ footer {
 
   /* Menu navigation */
   header {
-    height: 4.5vh;
+    height: 5vh;
   }
 
   .menu {
@@ -362,7 +362,9 @@ footer {
   }
 
   .menu a:hover {
-    padding: 10px 20px 8px 20px;
+          background-color: none;
+          height: auto;
+ 
   }
 
   /*img bannière*/
@@ -397,9 +399,9 @@ footer {
   }
 
   .img-laeti {
-    width: 100%;
-    max-width: 60%;
-    display: block;
+    
+    max-width: 75%;
+    
     margin: auto;
     padding: 0px;
   }
@@ -550,7 +552,7 @@ footer {
     margin: 10px;
   }
 
-  /*pied de page*/
+  /*---- PIED DE PAGE ----*/
 
   footer {
     background-color: #567370;
@@ -577,9 +579,10 @@ footer {
     text-align: center;
   }
 
-  /* --menu burger-- */
+/*---- MENU BURGER ----*/
+
   header {
-    height: 3.5vh;
+    height: 4vh;
   }
 
   .toggle {
@@ -613,7 +616,7 @@ footer {
     top: 0;
     right: 0;
     width: 30%;
-    height: 30vh;
+    height: 46vh;
     background-color: var(--color-1);
     flex-direction: column;
     justify-content: space-around;
@@ -627,8 +630,8 @@ footer {
   .menu a:hover {
     background-color: none;
   }
-
-  /*img bannière*/
+  
+/*---- Section TITRE ----*/
 
   .top-content {
     height: 43vh;
@@ -638,13 +641,13 @@ footer {
     background-repeat: no-repeat;
   }
 
-  /* blocs textuel-images */
+  /*---- Section TEXTE ----*/
 
   .text-main {
     text-align: justify;
   }
 
-  /* présentation */
+  /* --Article - Qui suis-je */
 
   .presentation {
     padding: 10px;
@@ -659,14 +662,14 @@ footer {
   }
 
   .img-laeti {
-    width: 100%;
-    max-width: 70%;
+   
+    max-width: 75%;
     display: block;
     margin: auto;
     padding: 0px;
   }
 
-  /* part yoga classes */
+  /* --Article - les Cours */
 
   #yoga-class {
     display: flex;
@@ -695,7 +698,7 @@ footer {
     opacity: 0;
   }
 
-  /* part prices and schedule */
+  /* --Article - Prix & Horaires */
 
   #prices-schedules {
     display: flex;
@@ -705,7 +708,7 @@ footer {
     height: auto;
   }
 
-  /* section prices */
+  /* Les Prix */
 
   .all-prices {
     display: flex;
@@ -733,7 +736,7 @@ footer {
     margin: 10px;
   }
 
-  /* section schedules */
+  /* Les Horaires */
 
   .all-schedules {
     width: 34rem;
@@ -745,7 +748,8 @@ footer {
   .schedules {
     margin: 30px 0px;
   }
-  /*2eme section informations*/
+
+  /*---- section INFORMATION ----*/
 
   .low-content {
     display: flex;
@@ -754,11 +758,12 @@ footer {
     padding-bottom: 0px;
   }
 
+  /* Me Trouver */
   .adress {
     margin: 30px 30px;
   }
 
-  /* formulaire */
+  /* Me Contacter : formulaire */
 
   .contact {
     padding: 30px 0px;
@@ -803,7 +808,8 @@ footer {
       -4px 0px 25px 2px rgba(86, 115, 112, 0);
   }
 
-  /*------ ME SUIVRE -----*/
+  /* Me Suivre */
+
   .follow {
     padding: 30px 30px 10px 30px;
   }
@@ -821,7 +827,7 @@ footer {
     margin: 10px;
   }
 
-  /*pied de page*/
+  /*---- PIED DE PAGE ----*/
 
   footer {
     background-color: #567370;
