@@ -36,6 +36,14 @@ suivant.addEventListener('click', function() {
     }
 )
 
+precedent.addEventListener("click", function () {
+  moveImage--;
+  if (moveImage <0) {
+    moveImage = imageOfSlider.length - 1;
+  }
+  enleverImageActive();
+  imageOfSlider[moveImage].classList.add("active");
+});
 
 /*----- Message retour de contact -----*/
 
