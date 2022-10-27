@@ -46,7 +46,7 @@ header {
 }
 
 nav {
-  height: 100%;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +56,7 @@ nav {
 .logo {
   width: 6vw;
   height: 100%;
-  margin-left: 1rem;
+ /* margin-left: 1rem;*/
 }
 
 .toggle {
@@ -65,7 +65,7 @@ nav {
 
 .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   width: 100%;
@@ -74,7 +74,7 @@ nav {
 .menu a {
   text-decoration: none;
   color: var(--color-2);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .menu a:hover {
@@ -99,6 +99,7 @@ h1 {
   text-align: left;
   padding-top: 5rem;
   padding-left: 1.5rem;
+
 }
 
 /* section TEXTE */
@@ -173,7 +174,7 @@ main {
 
 .suivant,
 .precedent {
-  color: var(--text-color);
+  color: black;
   font-size: 1.5rem;
   position: absolute;
   top: 50%;
@@ -352,8 +353,9 @@ button {
 /*pied de page*/
 
 footer {
-  background-color: #567370;
-  color: #f2f2f2;
+  width: 100%;
+  background-color: var(--color-1);
+  color: var(--color-2);
   text-align: center;
   /*margin-top: 10px;*/
   padding: 10px;
