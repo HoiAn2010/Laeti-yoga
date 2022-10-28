@@ -50,13 +50,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 0 1rem;*/
 }
 
 .logo {
   width: 6vw;
   height: 100%;
- /* margin-left: 1rem;*/
 }
 
 .toggle {
@@ -65,10 +63,11 @@ nav {
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
   width: 100%;
+  gap: 20px;
 }
 
 .menu a {
@@ -99,7 +98,6 @@ h1 {
   text-align: left;
   padding-top: 5rem;
   padding-left: 1.5rem;
-
 }
 
 /* section TEXTE */
@@ -113,7 +111,7 @@ main {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 1000px;
 }
 
 /* article - A propos */
@@ -121,7 +119,6 @@ main {
 #about-me {
   display: flex;
   justify-content: space-between;
-  /*margin: 4rem 4rem;*/
   padding: 20px 0px;
   height: auto;
   gap: 20px;
@@ -129,11 +126,11 @@ main {
 
 .img-laeti {
   width: 30%;
-  height: auto;
+  height: 100%;
+  padding-top: 65px;
 }
 
 .presentation {
-  /*padding-left: 30px;*/
   width: 70%;
 }
 
@@ -146,19 +143,20 @@ main {
 #yoga-class {
   display: flex;
   justify-content: space-between;
-  /*margin: 5rem 4rem;*/
   padding: 20px 0px;
   height: auto;
+  padding-bottom: 80px;
+  gap: 20px;
 }
 
 .lessons {
-  padding-right: 30px;
+  width: 60%;
 }
 
 .slider {
-  height: 30rem;
-  width: 50rem;
+  width: 40%;
   position: relative;
+  padding-top: 50px;
 }
 
 .img-slider {
@@ -179,6 +177,7 @@ main {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  padding-top: 80px;
 }
 .suivant {
   right: 1rem;
@@ -193,7 +192,6 @@ main {
   display: flex;
   justify-content: space-around;
   gap: 40px;
-  /*margin: 5rem 4rem;*/
   padding: 20px 0px 20px 0px;
   height: auto;
   background-color: pink;
@@ -205,20 +203,15 @@ main {
   display: flex;
   gap: 20px;
   justify-content: space-around;
-  /*margin: 10px auto 20px auto;*/
-  background-color: red;
 }
 .prices {
   min-width: 50%;
-  background-color: blue;
 }
 
 .card {
   background-color: var(--color-3);
-  /*min-width: 10em;*/
   width: calc(100% / 3);
   height: 300px;
-  /*margin: 20px;*/
 }
 
 .name {
@@ -281,15 +274,12 @@ main {
 .my-place {
   display: flex;
   justify-content: space-around;
-  padding-top: 2.2rem;
 }
 
 .details-adress {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /*margin: 10px;*/
-  padding-right: 10px;
   text-align: center;
 }
 
@@ -297,16 +287,13 @@ main {
 .contact {
   display: flex;
   flex-direction: column;
-  /*margin: 0px 20px;*/
 }
 
 label {
   text-align: center;
-  /*margin: 5px;*/
 }
 
 input {
-  /*width: 120%;*/
   height: 30px;
   box-shadow: 0px 10px 13px -7px #000000;
   border-color: var(--color-3);
@@ -315,7 +302,6 @@ input {
 }
 
 textarea {
-  /*width: 120%;*/
   height: 80px;
   box-shadow: 0px 10px 13px -7px #000000;
   border-color: var(--color-3);
@@ -325,7 +311,6 @@ textarea {
 
 button {
   width: 100px;
-  /*margin: 20px 0px 20px 100px;*/
   color: var(--color-2);
   background-color: black;
   padding: 5px;
@@ -335,12 +320,10 @@ button {
     -4px 0px 25px 2px rgba(86, 115, 112, 0);
 }
 
-
 /*------ ME SUIVRE -----*/
 .social {
   list-style: none;
   text-align: center;
-  /*margin: 30px 10px;*/
 }
 
 .icone {
@@ -354,66 +337,185 @@ footer {
   background-color: var(--color-1);
   color: var(--color-2);
   text-align: center;
-  /*margin-top: 10px;*/
-  padding: 10px;
+  padding: 10px 0;
 }
 
+/* ______RESPONSIVE GRANDE TABLETTE________ */
 
-/* ______RESPONSIVE TABLETTE________ */
+@media screen and (max-width: 1000px) {
+.wrapper {
+    width: 96%;
+    padding: 0 2%;
+  }
+}
 
-/*barre navigation */
+/* ______RESPONSIVE PETITE TABLETTE________ */
 
 @media screen and (max-width: 768px) {
-  #about-me {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    /*margin: 4rem 4rem;*/
-    padding: 20px 0px;
-    /*height: auto;*/
+  .wrapper {
+    width: 96%;
+    padding: 0 2%;
   }
+
+  .menu a {
+    font-size: 1rem;
+}
 
   .img-laeti {
     width: 40%;
-    height: 50%;
-    padding-top: 65px;
   }
 
   .presentation {
     width: 60%;
-    /*padding-left: 30px;*/
   }
-
- /* .text-main {
-    text-align: justify;
-  }*/
-
-  /* article - yoga classes */
 
   #yoga-class {
     display: flex;
     justify-content: space-between;
-    /*margin: 5rem 4rem;*/
-    padding: 20px 0px;
-    gap: 20px;
-    /*height: auto;*/
   }
 
   .lessons {
-    /*padding-right: 30px;*/
+    padding-right: 0px;
     width: 60%;
   }
 
   .slider {
-    position: relative;
     width: 40%;
+    height: 250px;
     padding-top: 65px;
   }
 
-  .img-slider {
+  #prices-schedules {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 20px 0px 20px 0px;
+    height: auto;
+    background-color: pink;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+  }
+
+  /* 2eme section informations */
+  .information {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  ul.social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #prices-schedules h2 {
+    text-align: center;
+  }
+
+  .all-schedules {
+    text-align: center;
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+/* ______RESPONSIVE PORTABLE________ */
+
+@media screen and (max-width: 412px) {
+  .toggle {
+    display: block;
+    font-size: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    z-index: 50;
+  }
+
+  .ouvrir {
+    display: block;
+    color: var(--color-2);
+  }
+
+  .fermer {
+    display: none;
+    color: var(--color-2);
+  }
+
+  .open .ouvrir {
+    display: none;
+  }
+
+  .open .fermer {
+    display: block;
+  }
+
+  .menu {
     position: absolute;
-    /*width: 40%;*/
-    /*height: 100%;*/
-    opacity: 0;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 46vh;
+    background-color: var(--color-1);
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateY(-100%);
+  }
+
+  .open .menu {
+    transform: translateY(0);
+  }
+
+  .menu a:hover {
+    background-color: none;
+  }
+  .wrapper {
+    width: 96%;
+    padding: 0 2%;
+  }
+
+  #about-me {
+    flex-direction: column;
+  }
+
+  .img-laeti {
+    width: 100%;
+  }
+
+  .presentation {
+    width: 100%;
+  }
+
+  #yoga-class {
+    flex-direction: column-reverse;
+    padding-bottom: 0px;
+  }
+
+  .lessons {
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .all-prices {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .my-place {
+    flex-direction: column;
+    align-items: center;
   }
 }
