@@ -1,6 +1,6 @@
 /*----- Menu burger -----*/
 let toggle = document.querySelector(".toggle");
-let body = document.querySelector("body"); /*? voir si on ne peut pas faire avec nav*/
+let body = document.querySelector("body"); //*? voir si on ne peut pas faire avec nav*//
 
 toggle.addEventListener("click", function () {
   body.classList.toggle("open");
