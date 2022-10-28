@@ -138,7 +138,7 @@ main {
   text-align: justify;
 }
 
-/* article - yoga classes */
+/* article - Cours */
 
 #yoga-class {
   display: flex;
@@ -186,7 +186,7 @@ main {
   left: 1rem;
 }
 
-/* part prices and schedule */
+/* article - Tarifs et Horaires */
 
 #prices-schedules {
   display: flex;
@@ -194,10 +194,9 @@ main {
   gap: 40px;
   padding: 20px 0px 20px 0px;
   height: auto;
-  background-color: pink;
 }
 
-/* section prices */
+/* sous article - Prix */
 
 .all-prices {
   display: flex;
@@ -231,13 +230,12 @@ main {
   align-items: center;
 }
 
-/* section schedules */
+/* sous article - Horaires */
 
 .schedules {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: yellow;
 }
 
 .all-schedules {
@@ -246,7 +244,7 @@ main {
   padding-top: 30px;
 }
 
-/* 2eme section informations */
+/* --- 2eme section INFORMATIONS ---- */
 .low-content {
   background-color: var(--color-4);
   padding: 20px 0;
@@ -269,11 +267,12 @@ main {
   text-align: center;
 }
 
-/*------ ME TROUVER -----*/
+/*------ article - Me Trouver -----*/
 
 .my-place {
   display: flex;
   justify-content: space-around;
+  padding-top: 37px;
 }
 
 .details-adress {
@@ -281,9 +280,10 @@ main {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding-right: 5px;
 }
 
-/*------ ME CONTACTER -----*/
+/*----- article - Me Contacter -----*/
 .contact {
   display: flex;
   flex-direction: column;
@@ -291,6 +291,7 @@ main {
 
 label {
   text-align: center;
+  padding: 10px 0px 5px 0px;
 }
 
 input {
@@ -314,23 +315,26 @@ button {
   color: var(--color-2);
   background-color: black;
   padding: 5px;
+  margin: 20px auto;
   font-family: "Baloo 2", cursive;
   font-size: 0.9rem;
   box-shadow: 0px 10px 13px -7px #000000,
     -4px 0px 25px 2px rgba(86, 115, 112, 0);
+  display:block;
 }
 
-/*------ ME SUIVRE -----*/
+/*--- article - Me Suivre ---*/
 .social {
   list-style: none;
   text-align: center;
+  padding-top: 30px;
 }
 
 .icone {
-  /*margin: 10px;*/
+  padding: 10px;
 }
 
-/*pied de page*/
+/* footer */
 
 footer {
   width: 100%;
@@ -340,6 +344,7 @@ footer {
   padding: 10px 0;
 }
 
+
 /* ______RESPONSIVE GRANDE TABLETTE________ */
 
 @media screen and (max-width: 1000px) {
@@ -348,6 +353,7 @@ footer {
     padding: 0 2%;
   }
 }
+
 
 /* ______RESPONSIVE PETITE TABLETTE________ */
 
@@ -359,6 +365,11 @@ footer {
 
   .menu a {
     font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-top: 2.5rem;
 }
 
   .img-laeti {
@@ -391,7 +402,6 @@ footer {
     gap: 40px;
     padding: 20px 0px 20px 0px;
     height: auto;
-    background-color: pink;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: space-around;
@@ -438,6 +448,14 @@ footer {
     z-index: 50;
   }
 
+  .menu a {
+  font-size: 1rem;
+}
+
+  .logo{
+    width: 12vw;
+  }
+
   .ouvrir {
     display: block;
     color: var(--color-2);
@@ -461,10 +479,10 @@ footer {
     top: 0;
     right: 0;
     width: 30%;
-    height: 46vh;
+    height: 47vh;
     background-color: var(--color-1);
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     transform: translateY(-100%);
   }
 
@@ -475,6 +493,13 @@ footer {
   .menu a:hover {
     background-color: none;
   }
+
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  padding-top: 2rem;
+}
+
   .wrapper {
     width: 96%;
     padding: 0 2%;
@@ -506,6 +531,9 @@ footer {
     padding-top: 0px;
   }
 
+  #prices-schedules {
+    padding: 20px 20px;
+}
   .all-prices {
     flex-direction: column;
   }
